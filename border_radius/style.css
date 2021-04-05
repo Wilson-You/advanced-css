@@ -1,0 +1,71 @@
+html {
+    font-size: 10px;
+    background: rgb(218, 233, 238);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+.border-radius-one{
+    background: rebeccapurple;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 20px;
+    color:white;
+    text-align: center;
+}
+
+.border-radius-two{
+    background: black;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 6px 24px;
+    color: white;
+    text-align: center;
+}
+
+.border-radius-three{
+    background: green;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 6px 12px 24px;
+    color: white;
+    text-align: center;
+}
+
+.border-radius-four{
+    background: blue;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 6px 12px  18px 24px;
+    color: white;
+    text-align: center;
+}
+
+.border-radius-hzt-vtl{
+    border: 1px solid gold;
+    background: orange;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 5rem/10rem;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+
+.circle {
+    background: brown;
+    margin: 2rem auto;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
