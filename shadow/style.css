@@ -1,0 +1,80 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    background: lightblue;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div:first-child {
+    width:15rem;
+    height: 15rem;
+    margin: 2rem auto;
+    background: purple;
+    text-align: center;
+    box-shadow: 3px 3px;
+    font-size: 2rem;
+    line-height: 15rem;
+}
+div:nth-child(2) {
+    width:15rem;
+    height: 15rem;
+    margin: 2rem auto;
+    background: green;
+    text-align: center;
+    box-shadow: 3px 3px 5px;
+    font-size: 2rem;
+    line-height: 15rem;
+}
+
+div:nth-child(3) {
+    width:15rem;
+    height: 15rem;
+    margin: 2rem auto;
+    background: blue;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 5px rgb(94, 94, 177);
+    font-size: 2rem;
+    line-height: 15rem;
+}
+
+div:nth-child(4) {
+    width:15rem;
+    height: 15rem;
+    margin: 2rem auto;
+    background: black;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 5px 5px rgb(94, 94, 177);
+    font-size: 2rem;
+    line-height: 15rem;
+}
+
+div:nth-child(5){
+    width:15rem;
+    height: 15rem;
+    margin: 2rem auto;
+    background: whitesmoke;
+    text-align: center;
+    color: black;
+    box-shadow: inset 3px 3px 5px 5px rgb(94, 94, 177);
+    font-size: 2rem;
+    line-height: 15rem;
+}
+div:nth-child(6){
+    width: 15rem;
+    height: 15rem;
+    line-height: 15rem;
+    margin: 2rem auto;
+    background: whitesmoke;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px gray;
+}
