@@ -1,0 +1,107 @@
+html {
+    font-size: 10px;
+    background-color: lightblue;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.rotate{
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 2px solid rgb(117, 89, 91);
+    line-height: 10rem;
+    background-color: lightcoral;
+    box-shadow: 2px 2px 2px rgb(180, 52, 5);
+    border-radius: 5px;
+    transform: rotate(0);
+    transition: transform 1s ease;
+
+}
+
+.scale{
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 10);
+    background-color: cornsilk;
+    box-shadow: inset 2px 2px 2px blueviolet;
+    line-height: 10rem;
+    transform: scale(1);
+    transition: transform 1s ease;
+}
+
+.skew{
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 2px solid rgb(170, 41, 149);
+    background-color: blueviolet;
+    line-height: 10rem;
+    transform: skew(0);
+    transition: transform .5s linear;
+
+}
+
+.translate{
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 2px solid rgb(35, 173, 70);
+    background-color: burlywood;
+    line-height: 10rem;
+    transform: translate(0);
+    transition: transform .5s linear;
+
+}
+
+.all{
+    width: 10rem;
+    height: 10rem;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 2px solid rgb(197, 43, 184);
+    background-color: rgb(151, 27, 151);
+    line-height: 10rem;
+    transform: rotate(0) translate(0) scale(1) skew(0);
+    transition: transform 1s linear;
+
+}
+
+.rotate:hover {
+    transform: rotate(.5turn);
+}
+
+.scale:hover {
+    transform: scale(2);
+}
+
+.skew:hover {
+    transform: skew(15deg, 55deg);
+}
+
+.translate:hover {
+    transform: translate(3rem, 4rem);
+}
+
+.all:hover {
+    transform: rotate(1turn) scale(2) translate(1rem) skew(15deg, 15deg)
+}
