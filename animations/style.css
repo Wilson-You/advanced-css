@@ -1,0 +1,88 @@
+html {
+    font-size: 10px;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    background-color: #ff583d;
+    color: #222224;
+    border: none;
+    margin: 1rem;
+    margin-bottom: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+    overflow: hidden;
+    padding: 1.2rem 2.4rem;
+    transition: all 0.3s ease-out;
+
+}
+
+.button_1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f0c808;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: translateX(-20rem);
+    transition: transform .5s;
+}
+
+.button_1:hover {
+    color: white;
+    background-color: transparent;
+}
+
+.button_1:hover::before {
+    transform: translateX(0);
+}
+
+.button_2::before {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #f0c808;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: top left;
+    transform: translateY(-100%);
+    transition: all .2s;
+}
+
+.button_2:hover{
+    color: white;
+    background-color: transparent;
+}
+
+.button_2:hover::before{
+    transform: translateY(0);
+}
+
+.button_3:hover {
+    color: white;
+    background-color: #f0c808;
+    transform: translateY(-2px) scale(1.1);
+}
