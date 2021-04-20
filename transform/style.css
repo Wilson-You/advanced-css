@@ -105,3 +105,39 @@ h1 {
 .all:hover {
     transform: rotate(1turn) scale(2) translate(1rem) skew(15deg, 15deg)
 }
+
+
+
+figure{
+    width: 30rem;
+    height: 20rem;
+    margin: 2rem auto;
+    position: relative;
+    /* border: 1px solid red; */
+ }
+
+figure img[src*='cover'] {
+    width:100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 2;
+    transform-origin: left;
+    box-shadow: 5px 5px 10px rgb(101, 101, 101);
+    transform: scaleX(1);
+    transition: all 1s linear;
+}
+
+figure:hover img[src*='cover'] {
+    box-shadow: -5px 5px 10px rgb(101, 101, 101);
+    transform: scaleX(-1);
+}
+
+figure img[src*='inside'] {
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+

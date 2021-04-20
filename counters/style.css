@@ -1,0 +1,9 @@
+body {
+    counter-reset: figures;
+}
+figcaption::before {
+    counter-increment: figures;
+    content: 'Fig ' counter(figures) ': '
+}
+
+
