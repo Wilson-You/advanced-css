@@ -3,7 +3,8 @@ body {
 }
 figcaption::before {
     counter-increment: figures;
-    content: 'Fig ' counter(figures) ': '
+    content: 'Fig-' counter(figures) ' ';/*no plus sign*/
+    font-size: 2rem
 }
 
 
